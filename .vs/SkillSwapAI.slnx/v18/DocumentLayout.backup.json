@@ -1,0 +1,781 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\publicuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\publicuserprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\migrations\\20260420053817_addbioandsessionscompletedtouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:migrations\\20260420053817_addbioandsessionscompletedtouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\migrations\\20260417145158_addbiotouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:migrations\\20260417145158_addbiotouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\sessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\sessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\updateprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:models\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\models\\skillrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:models\\skillrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\skillrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\skillrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\services\\sessionlinkgeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:services\\sessionlinkgeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\availabilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\availabilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408054217_New1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260408054217_New1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408054123_New1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260408054123_New1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\models\\mentoravailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:models\\mentoravailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408053411_new1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260408053411_new1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\sessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\sessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\dashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\dashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\timeslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\timeslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\offerslotsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\offerslotsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\uploadprofileimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\uploadprofileimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\createskillrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\createskillrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\dtos\\createsessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:dtos\\createsessiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260325045944_AddProfileImageUrlToUsers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260325045944_AddProfileImageUrlToUsers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\skillswapai.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:skillswapai.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\migrations\\20260408071524_addphoneandlocationtouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:migrations\\20260408071524_addphoneandlocationtouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\migrations\\20260408054817_new1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:migrations\\20260408054817_new1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\migrations\\20260414100948_updatesessionmeetinglinknullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:migrations\\20260414100948_updatesessionmeetinglinknullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|d:\\newmajor project\\backend\\skillswapai\\migrations\\20260414094605_updatesessionmeetinglinklogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61D75EAE-9A8C-E3D8-F450-136E65D81F92}|SkillSwapAI.csproj|solutionrelative:migrations\\20260414094605_updatesessionmeetinglinklogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PublicUserProfileDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\PublicUserProfileDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\PublicUserProfileDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\PublicUserProfileDto.cs",
+              "RelativeToolTip": "DTOs\\PublicUserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T06:02:34.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T06:29:49.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T06:11:54.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "Models\\Review.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\Review.cs",
+              "RelativeToolTip": "Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T09:26:02.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewsController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T06:52:36.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProfileController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "Controllers\\ProfileController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T16:15:59.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260420053817_AddBioAndSessionsCompletedToUser.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260420053817_AddBioAndSessionsCompletedToUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260420053817_AddBioAndSessionsCompletedToUser.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260420053817_AddBioAndSessionsCompletedToUser.cs",
+              "RelativeToolTip": "Migrations\\20260420053817_AddBioAndSessionsCompletedToUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T05:38:18.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Session.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\Session.cs",
+              "RelativeDocumentMoniker": "Models\\Session.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\Session.cs",
+              "RelativeToolTip": "Models\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T05:23:11.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SessionsController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\SessionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SessionsController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\SessionsController.cs",
+              "RelativeToolTip": "Controllers\\SessionsController.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAIwAUBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T05:53:35.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20260417145158_AddBioToUser.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260417145158_AddBioToUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260417145158_AddBioToUser.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260417145158_AddBioToUser.cs",
+              "RelativeToolTip": "Migrations\\20260417145158_AddBioToUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:52:00.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwvzYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T06:51:10.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateProfileDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\UpdateProfileDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UpdateProfileDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\UpdateProfileDto.cs",
+              "RelativeToolTip": "DTOs\\UpdateProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T07:13:18.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAYwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T06:10:39.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SkillRequestsController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\SkillRequestsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SkillRequestsController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\SkillRequestsController.cs",
+              "RelativeToolTip": "Controllers\\SkillRequestsController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wK0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T05:56:59.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SkillRequest.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\SkillRequest.cs",
+              "RelativeDocumentMoniker": "Models\\SkillRequest.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\SkillRequest.cs",
+              "RelativeToolTip": "Models\\SkillRequest.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T04:58:27.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAkwDsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T06:42:54.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContextFactory.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T07:06:13.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\Skill.cs",
+              "RelativeDocumentMoniker": "Models\\Skill.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\Skill.cs",
+              "RelativeToolTip": "Models\\Skill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T05:01:19.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SessionLinkGeneratorService.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Services\\SessionLinkGeneratorService.cs",
+              "RelativeDocumentMoniker": "Services\\SessionLinkGeneratorService.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Services\\SessionLinkGeneratorService.cs",
+              "RelativeToolTip": "Services\\SessionLinkGeneratorService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T09:42:32.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20260414100948_UpdateSessionMeetingLinkNullable.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260414100948_UpdateSessionMeetingLinkNullable.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260414100948_UpdateSessionMeetingLinkNullable.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260414100948_UpdateSessionMeetingLinkNullable.cs",
+              "RelativeToolTip": "Migrations\\20260414100948_UpdateSessionMeetingLinkNullable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T10:09:48.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20260414094605_UpdateSessionMeetingLinkLogic.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260414094605_UpdateSessionMeetingLinkLogic.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260414094605_UpdateSessionMeetingLinkLogic.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260414094605_UpdateSessionMeetingLinkLogic.cs",
+              "RelativeToolTip": "Migrations\\20260414094605_UpdateSessionMeetingLinkLogic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T09:46:06.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAADwv2oAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T08:36:18.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ReviewDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\ReviewDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\ReviewDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\ReviewDto.cs",
+              "RelativeToolTip": "DTOs\\ReviewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:57:40.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AvailabilityController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\AvailabilityController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AvailabilityController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\AvailabilityController.cs",
+              "RelativeToolTip": "Controllers\\AvailabilityController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAAJIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T06:03:29.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20260408071524_AddPhoneAndLocationToUser.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408071524_AddPhoneAndLocationToUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260408071524_AddPhoneAndLocationToUser.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408071524_AddPhoneAndLocationToUser.cs",
+              "RelativeToolTip": "Migrations\\20260408071524_AddPhoneAndLocationToUser.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T07:15:24.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20260408054817_New1.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408054817_New1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260408054817_New1.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408054817_New1.cs",
+              "RelativeToolTip": "Migrations\\20260408054817_New1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:48:17.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20260408054217_New1.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408054217_New1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260408054217_New1.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408054217_New1.cs",
+              "RelativeToolTip": "Migrations\\20260408054217_New1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:42:17.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20260408054123_New1.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408054123_New1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260408054123_New1.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408054123_New1.cs",
+              "RelativeToolTip": "Migrations\\20260408054123_New1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:41:23.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MentorAvailability.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\MentorAvailability.cs",
+              "RelativeDocumentMoniker": "Models\\MentorAvailability.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\MentorAvailability.cs",
+              "RelativeToolTip": "Models\\MentorAvailability.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T05:52:18.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20260408053411_new1.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408053411_new1.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260408053411_new1.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260408053411_new1.cs",
+              "RelativeToolTip": "Migrations\\20260408053411_new1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:34:11.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-07T08:26:24.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Models\\Message.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Models\\Message.cs",
+              "RelativeToolTip": "Models\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T05:14:53.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SkillDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\SkillDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\SkillDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\SkillDto.cs",
+              "RelativeToolTip": "DTOs\\SkillDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:57:33.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SendMessageDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\SendMessageDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\SendMessageDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\SendMessageDto.cs",
+              "RelativeToolTip": "DTOs\\SendMessageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:57:39.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SessionDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\SessionDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\SessionDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\SessionDto.cs",
+              "RelativeToolTip": "DTOs\\SessionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T07:04:05.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SkillsController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\SkillsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SkillsController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\SkillsController.cs",
+              "RelativeToolTip": "Controllers\\SkillsController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwJoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T06:43:55.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DashboardDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\DashboardDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\DashboardDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\DashboardDto.cs",
+              "RelativeToolTip": "DTOs\\DashboardDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA4wBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T07:15:42.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TimeSlotDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\TimeSlotDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\TimeSlotDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\TimeSlotDto.cs",
+              "RelativeToolTip": "DTOs\\TimeSlotDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T05:58:51.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OfferSlotsDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\OfferSlotsDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\OfferSlotsDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\OfferSlotsDto.cs",
+              "RelativeToolTip": "DTOs\\OfferSlotsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T05:58:29.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UploadProfileImageDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\UploadProfileImageDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\UploadProfileImageDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\UploadProfileImageDto.cs",
+              "RelativeToolTip": "DTOs\\UploadProfileImageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T07:31:45.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegisterDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:57:43.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:57:52.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CreateSkillRequestDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\CreateSkillRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateSkillRequestDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\CreateSkillRequestDto.cs",
+              "RelativeToolTip": "DTOs\\CreateSkillRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:57:54.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CreateSessionDto.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\CreateSessionDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateSessionDto.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\DTOs\\CreateSessionDto.cs",
+              "RelativeToolTip": "DTOs\\CreateSessionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T08:57:56.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAwwHwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T06:42:26.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20260325045944_AddProfileImageUrlToUsers.cs",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260325045944_AddProfileImageUrlToUsers.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260325045944_AddProfileImageUrlToUsers.cs",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\Migrations\\20260325045944_AddProfileImageUrlToUsers.cs",
+              "RelativeToolTip": "Migrations\\20260325045944_AddProfileImageUrlToUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T04:59:44.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SkillSwapAI.csproj",
+              "DocumentMoniker": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\SkillSwapAI.csproj",
+              "RelativeDocumentMoniker": "SkillSwapAI.csproj",
+              "ToolTip": "D:\\NewMajor Project\\Backend\\SkillSwapAI\\SkillSwapAI.csproj",
+              "RelativeToolTip": "SkillSwapAI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-24T16:54:21.364Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
