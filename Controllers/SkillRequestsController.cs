@@ -109,6 +109,14 @@ public class SkillRequestsController : ControllerBase
                 .OrderByDescending(s => s.SessionId)
                 .FirstOrDefault();
 
+            var now = DateTime.UtcNow;
+            var sessionStatus = latestSession?.Status;
+            if (latestSession != null && (sessionStatus == "Scheduled" || sessionStatus == "Started") && 
+                latestSession.ScheduledEndTime.HasValue && now > latestSession.ScheduledEndTime.Value)
+            {
+                sessionStatus = "Expired";
+            }
+
             return new
             {
                 r.Id,
@@ -118,12 +126,12 @@ public class SkillRequestsController : ControllerBase
                 r.CreatedAt,
                 r.ScheduledStartTime,
                 r.ScheduledEndTime,
-                r.MeetingLink,
+                MeetingLink = sessionStatus == "Expired" ? null : r.MeetingLink,
                 r.MeetingPlatform,
                 sessionId = latestSession?.SessionId ?? 0,
-                sessionMeetingLink = latestSession?.MeetingLink,
+                sessionMeetingLink = sessionStatus == "Expired" ? null : latestSession?.MeetingLink,
                 sessionScheduledAt = latestSession?.ScheduledAt,
-                sessionStatus = latestSession?.Status,
+                sessionStatus = sessionStatus,
                 isStarted = latestSession?.IsStarted ?? false
             };
         });
@@ -154,6 +162,14 @@ public class SkillRequestsController : ControllerBase
                 .OrderByDescending(s => s.SessionId)
                 .FirstOrDefault();
 
+            var now = DateTime.UtcNow;
+            var sessionStatus = latestSession?.Status;
+            if (latestSession != null && (sessionStatus == "Scheduled" || sessionStatus == "Started") && 
+                latestSession.ScheduledEndTime.HasValue && now > latestSession.ScheduledEndTime.Value)
+            {
+                sessionStatus = "Expired";
+            }
+
             return new
             {
                 r.Id,
@@ -164,13 +180,12 @@ public class SkillRequestsController : ControllerBase
                 r.CreatedAt,
                 r.ScheduledStartTime,
                 r.ScheduledEndTime,
-                r.MeetingLink,
+                MeetingLink = sessionStatus == "Expired" ? null : r.MeetingLink,
                 r.MeetingPlatform,
                 sessionId = latestSession?.SessionId ?? 0,
-                sessionMeetingLink = latestSession != null && latestSession.Status == "Started"
-                ? latestSession.MeetingLink: null,
+                sessionMeetingLink = sessionStatus == "Expired" ? null : (latestSession != null && latestSession.Status == "Started" ? latestSession.MeetingLink : null),
                 sessionScheduledAt = latestSession?.ScheduledAt,
-                sessionStatus = latestSession?.Status,
+                sessionStatus = sessionStatus,
                 isStarted = latestSession?.IsStarted ?? false
             };
         });

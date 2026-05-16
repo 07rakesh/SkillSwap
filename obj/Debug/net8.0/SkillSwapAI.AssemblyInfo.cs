@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillSwapAI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4ca12ad9726782182abd55292391194562dcf2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillSwapAI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillSwapAI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -40,13 +40,18 @@ public class DashboardController : ControllerBase
                 (r.OwnerUserId == userId || r.RequesterUserId == userId) &&
                 r.Status == "Pending");
 
+        var now = DateTime.UtcNow;
         var scheduledSessions = await _context.Sessions
             .Include(s => s.SkillRequest)
             .CountAsync(s =>
                 s.SkillRequest != null &&
                 (s.SkillRequest.RequesterUserId == userId ||
                  s.SkillRequest.OwnerUserId == userId) &&
-                s.Status == "Scheduled");
+                (s.Status == "Scheduled" || s.Status == "Started") &&
+                (!s.ScheduledEndTime.HasValue || s.ScheduledEndTime > now));
+
+        var unreadMessagesCount = await _context.Messages
+            .CountAsync(m => m.ReceiverId == userId && !m.IsRead);
 
         var recentRequests = await _context.SkillRequests
             .Include(r => r.Skill)
@@ -71,9 +76,10 @@ public class DashboardController : ControllerBase
                 s.SkillRequest != null &&
                 (s.SkillRequest.RequesterUserId == userId ||
                  s.SkillRequest.OwnerUserId == userId) &&
-                s.Status == "Scheduled" &&
-                s.SessionDate >= DateTime.UtcNow)
-            .OrderBy(s => s.SessionDate)
+                (s.Status == "Scheduled" || s.Status == "Started") &&
+                s.ScheduledAt >= now.AddMinutes(-30) &&
+                (!s.ScheduledEndTime.HasValue || s.ScheduledEndTime > now))
+            .OrderBy(s => s.ScheduledAt)
             .Take(5)
             .Select(s => new
             {
@@ -93,6 +99,7 @@ public class DashboardController : ControllerBase
             PendingRequests = pendingRequests,
             ScheduledSessions = scheduledSessions,
             Credits = user.Credits,
+            UnreadMessagesCount = unreadMessagesCount,
             RecentRequests = recentRequests,
             UpcomingSessions = upcomingSessions,
             UserName = user.FullName

@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\vscode\\SkillSwap\\SkillSwapAI\\wwwroot\\uploads\\074123e9-94d3-45d5-ae4c-651831f3ed59.jpg",
+      "PackagePath": "staticwebassets\\uploads\\074123e9-94d3-45d5-ae4c-651831f3ed59.jpg"
+    },
+    {
+      "Id": "D:\\vscode\\SkillSwap\\SkillSwapAI\\wwwroot\\uploads\\36bcf5ad-0661-4d0f-b4e6-2a2d440bf219.jpg",
+      "PackagePath": "staticwebassets\\uploads\\36bcf5ad-0661-4d0f-b4e6-2a2d440bf219.jpg"
+    },
+    {
+      "Id": "D:\\vscode\\SkillSwap\\SkillSwapAI\\wwwroot\\uploads\\5174b3bd-5e77-4e1b-b5f8-2133054b848f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5174b3bd-5e77-4e1b-b5f8-2133054b848f.jpg"
+    },
+    {
+      "Id": "D:\\vscode\\SkillSwap\\SkillSwapAI\\wwwroot\\uploads\\6727a6ce-2d73-4150-af81-908bb7554ea5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6727a6ce-2d73-4150-af81-908bb7554ea5.jpg"
+    },
+    {
+      "Id": "D:\\vscode\\SkillSwap\\SkillSwapAI\\wwwroot\\uploads\\69ba309e-f010-495b-a905-78cfbb7192ff.jpg",
+      "PackagePath": "staticwebassets\\uploads\\69ba309e-f010-495b-a905-78cfbb7192ff.jpg"
+    },
+    {
+      "Id": "D:\\vscode\\SkillSwap\\SkillSwapAI\\wwwroot\\uploads\\735a661f-e412-4d28-924f-db4458ebb2f3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\735a661f-e412-4d28-924f-db4458ebb2f3.jpg"
+    },
+    {
+      "Id": "D:\\vscode\\SkillSwap\\SkillSwapAI\\wwwroot\\uploads\\7f860b5f-48a1-447d-9701-82cff2193cb0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\7f860b5f-48a1-447d-9701-82cff2193cb0.jpg"
+    },
+    {
+      "Id": "D:\\vscode\\SkillSwap\\SkillSwapAI\\wwwroot\\uploads\\812fb32f-4ee6-42a3-a1d5-6474a234886b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\812fb32f-4ee6-42a3-a1d5-6474a234886b.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SkillSwapAI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SkillSwapAI.props",
+      "PackagePath": "build\\SkillSwapAI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SkillSwapAI.props",
+      "PackagePath": "buildMultiTargeting\\SkillSwapAI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SkillSwapAI.props",
+      "PackagePath": "buildTransitive\\SkillSwapAI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

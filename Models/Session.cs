@@ -6,6 +6,7 @@ public class Session
     public SkillRequest SkillRequest { get; set; } = null!;
 
     public DateTime ScheduledAt { get; set; }
+    public DateTime? ScheduledEndTime { get; set; }
 
     public DateTime SessionDate { get; set; } 
     public DateTime SessionTime { get; set; }

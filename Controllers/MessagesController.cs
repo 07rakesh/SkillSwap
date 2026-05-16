@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SkillSwapAI.DTOs;
@@ -62,7 +62,56 @@ public class MessagesController : ControllerBase
             .OrderBy(m => m.SentAt)
             .ToListAsync();
 
+        // 👁️ Mark as read
+        var unread = messages.Where(m => m.ReceiverId == currentUserId && !m.IsRead).ToList();
+        if (unread.Any())
+        {
+            unread.ForEach(m => m.IsRead = true);
+            await _context.SaveChangesAsync();
+        }
+
         return Ok(messages);
+    }
+
+    // =========================
+    // GET UNREAD COUNT
+    // =========================
+    [HttpGet("unread-count")]
+    public async Task<IActionResult> GetUnreadCount()
+    {
+        var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (string.IsNullOrEmpty(userIdClaim)) return Unauthorized();
+
+        int currentUserId = int.Parse(userIdClaim);
+
+        var count = await _context.Messages
+            .CountAsync(m => m.ReceiverId == currentUserId && !m.IsRead);
+
+        return Ok(new { count });
+    }
+
+    // =========================
+    // MARK AS READ
+    // =========================
+    [HttpPost("read/{senderId}")]
+    public async Task<IActionResult> MarkAsRead(int senderId)
+    {
+        var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (string.IsNullOrEmpty(userIdClaim)) return Unauthorized();
+
+        int currentUserId = int.Parse(userIdClaim);
+
+        var unread = await _context.Messages
+            .Where(m => m.SenderId == senderId && m.ReceiverId == currentUserId && !m.IsRead)
+            .ToListAsync();
+
+        if (unread.Any())
+        {
+            unread.ForEach(m => m.IsRead = true);
+            await _context.SaveChangesAsync();
+        }
+
+        return Ok(new { message = "Messages marked as read" });
     }
 
     // =========================
@@ -84,7 +133,8 @@ public class MessagesController : ControllerBase
             {
                 u.UserId,
                 u.FullName,
-                u.Email
+                u.Email,
+                unreadCount = _context.Messages.Count(m => m.SenderId == u.UserId && m.ReceiverId == currentUserId && !m.IsRead)
             })
             .ToListAsync();
 

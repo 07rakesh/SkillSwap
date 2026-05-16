@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace SkillSwapAI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260511203210_InitialSqlServerCreate")]
-    partial class InitialSqlServerCreate
+    [Migration("20260516030835_InitialSqlServerMigration")]
+    partial class InitialSqlServerMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -110,6 +110,9 @@ namespace SkillSwapAI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ScheduledAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ScheduledEndTime")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("SessionDate")
@@ -265,6 +268,43 @@ namespace SkillSwapAI.Migrations
                     b.ToTable("MentorAvailabilities");
                 });
 
+            modelBuilder.Entity("SkillSwapAI.Models.Transaction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("RelatedSessionId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RelatedSessionId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Transactions");
+                });
+
             modelBuilder.Entity("User", b =>
                 {
                     b.Property<int>("UserId")
@@ -412,6 +452,24 @@ namespace SkillSwapAI.Migrations
                     b.Navigation("RequesterUser");
 
                     b.Navigation("Skill");
+                });
+
+            modelBuilder.Entity("SkillSwapAI.Models.Transaction", b =>
+                {
+                    b.HasOne("Session", "RelatedSession")
+                        .WithMany()
+                        .HasForeignKey("RelatedSessionId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RelatedSession");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Session", b =>

@@ -134,7 +134,8 @@ public class AvailabilityController : ControllerBase
             session = new Session
             {
                 SkillRequestId = request.Id,
-                ScheduledAt = slot.StartTime, // ✅ Fix: Use slot start time, not UtcNow
+                ScheduledAt = slot.StartTime, 
+                ScheduledEndTime = slot.EndTime,
                 SessionDate = slot.StartTime.Date,
                 SessionTime = slot.StartTime,
                 MeetingLink = meetingLink,
@@ -146,13 +147,24 @@ public class AvailabilityController : ControllerBase
         }
         else
         {
-            session.ScheduledAt = slot.StartTime; // ✅ Fix: Use slot start time
+            session.ScheduledAt = slot.StartTime; 
+            session.ScheduledEndTime = slot.EndTime;
             session.SessionDate = slot.StartTime.Date;
             session.SessionTime = slot.StartTime;
             session.MeetingLink = meetingLink;
             session.IsStarted = false;
             session.Status = "Scheduled";
         }
+
+        // 📝 Log Booking Transaction
+        _context.Transactions.Add(new Transaction
+        {
+            UserId = userId.Value,
+            Amount = -1,
+            Type = "Booking",
+            Description = $"Booked slot for request #{request.Id}",
+            RelatedSession = session
+        });
 
         await _context.SaveChangesAsync();
 

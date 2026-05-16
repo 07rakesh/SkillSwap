@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SkillSwapAI.Models;
 
 public class ApplicationDbContext : DbContext
@@ -15,10 +16,34 @@ public class ApplicationDbContext : DbContext
     public DbSet<SkillRequest> SkillRequests { get; set; }
     public DbSet<Message> Messages { get; set; }
     public DbSet<MentorAvailability> MentorAvailabilities { get; set; }
+    public DbSet<Transaction> Transactions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        var dateTimeConverter = new ValueConverter<DateTime, DateTime>(
+            v => v.Kind == DateTimeKind.Utc ? v : v.ToUniversalTime(),
+            v => DateTime.SpecifyKind(v, DateTimeKind.Utc));
+
+        var nullableDateTimeConverter = new ValueConverter<DateTime?, DateTime?>(
+            v => v.HasValue ? (v.Value.Kind == DateTimeKind.Utc ? v.Value : v.Value.ToUniversalTime()) : v,
+            v => v.HasValue ? DateTime.SpecifyKind(v.Value, DateTimeKind.Utc) : v);
+
+        foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+        {
+            foreach (var property in entityType.GetProperties())
+            {
+                if (property.ClrType == typeof(DateTime))
+                {
+                    property.SetValueConverter(dateTimeConverter);
+                }
+                else if (property.ClrType == typeof(DateTime?))
+                {
+                    property.SetValueConverter(nullableDateTimeConverter);
+                }
+            }
+        }
 
         modelBuilder.Entity<User>()
             .HasIndex(u => u.Email)
@@ -83,5 +108,17 @@ public class ApplicationDbContext : DbContext
             .WithMany()
             .HasForeignKey(r => r.TeacherId)
             .OnDelete(DeleteBehavior.NoAction);
+
+        modelBuilder.Entity<Transaction>()
+            .HasOne(t => t.User)
+            .WithMany()
+            .HasForeignKey(t => t.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        modelBuilder.Entity<Transaction>()
+            .HasOne(t => t.RelatedSession)
+            .WithMany()
+            .HasForeignKey(t => t.RelatedSessionId)
+            .OnDelete(DeleteBehavior.SetNull);
     }
 }
