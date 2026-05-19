@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SkillSwapAI.DTOs;
@@ -136,5 +136,38 @@ public class ProfileController : ControllerBase
             message = "Image uploaded successfully",
             imageUrl = imageUrl
         });
+    }
+
+    [HttpGet("Reviews")]
+    public async Task<IActionResult> GetMyReviews()
+    {
+        var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (string.IsNullOrEmpty(userIdClaim))
+            return Unauthorized(new { message = "User claim not found." });
+
+        if (!int.TryParse(userIdClaim, out int userId))
+            return Unauthorized(new { message = "Invalid user id in token." });
+
+        var reviews = await _context.Reviews
+            .Include(r => r.Reviewer)
+            .Include(r => r.Session)
+                .ThenInclude(s => s.SkillRequest)
+                    .ThenInclude(sr => sr.Skill)
+            .Where(r => r.TeacherId == userId)
+            .OrderByDescending(r => r.CreatedAt)
+            .Select(r => new
+            {
+                reviewId = r.ReviewId,
+                sessionId = r.SessionId,
+                reviewerId = r.ReviewerId,
+                reviewerName = r.Reviewer.FullName,
+                skillName = r.Session.SkillRequest.Skill.SkillName,
+                rating = r.Rating,
+                comment = r.Comment,
+                createdAt = r.CreatedAt
+            })
+            .ToListAsync();
+
+        return Ok(reviews);
     }
 }

@@ -147,6 +147,13 @@ public class SessionsController : ControllerBase
             .OrderByDescending(s => s.ScheduledAt)
             .ToListAsync();
 
+        var sessionIds = sessions.Select(s => s.SessionId).ToList();
+        var reviewedSessionIds = await _context.Reviews
+            .Where(r => sessionIds.Contains(r.SessionId) && r.ReviewerId == currentUserId)
+            .Select(r => r.SessionId)
+            .ToListAsync();
+        var reviewedSet = reviewedSessionIds.ToHashSet();
+
         var now = DateTime.UtcNow;
         var result = sessions.Select(s => {
             var status = s.Status;
@@ -173,7 +180,8 @@ public class SessionsController : ControllerBase
                 Status = status,
                 MeetingLink = s.MeetingLink,
                 MeetingPlatform = "Jitsi",
-                IsStarted = s.IsStarted
+                IsStarted = s.IsStarted,
+                IsReviewed = reviewedSet.Contains(s.SessionId)
             };
         });
 
